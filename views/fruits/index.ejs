@@ -9,7 +9,7 @@
         <main>
             <div>
                 <a href="/fruits/new"><button>Create New Fruit</button></a>
-                
+                <h1>Logged in As: <%= user %> </h1>
                 <% for (fruit of fruits) { %>
                     <article>
                         <a href="/fruits/<%= fruit._id %>">
@@ -22,6 +22,7 @@
 
                 <% } %> 
             </div>
+            <a href="/user/logout"><button>Logout</button></a>
         </main>
     </body>
 </html>
